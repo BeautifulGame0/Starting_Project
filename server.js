@@ -127,7 +127,7 @@ var con = mysql.createConnection({
 });  
 	con.connect(function(err) {  
 	if (err) throw err;  
-	console.log("username-----"+id);
+	console.log("userna-----"+id);
     console.log("user ID-----"+displayName);
     console.log("user Mail-----"+emails); 
 	con.query("Insert into veg_login_details (ID,Name,Email_id) values(?,?,?)",[id,displayName, emails], function (err, result) {  
